@@ -19,11 +19,11 @@ python manage.py renserver
 All contributions are welcome! Code, documentation, graphics or even design suggestions are welcome; use GitHub to its fullest. Submit pull requests, contribute tutorials or other wiki content -- whatever you have to offer, it would be appreciated!
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on contributing.
-
+<!--
 ### On Heroku
 
 Read [Heroku's Flask deployment guide](https://devcenter.heroku.com/articles/getting-started-with-python-o#deploy-your-application-to-heroku) to learn how to deploy this application there.
-
+-->
 
 # :scroll: License
 
@@ -38,11 +38,11 @@ Please read [Prerequisite](Prerequisite.md) file for details.
 
 # :scroll: Changelog
 
-Check the [changelog here](https://github.com/Saketh-Chandra/flask_basic/commits/master).
+Check the [changelog here](https://github.com/Saketh-Chandra/My_ToDO/commits/master).
 
 # :scroll: I found some bugs or issues. Where do I report?
 
-Report [here](https://github.com/Saketh-Chandra/flask_basic/issues/new) in detail answering these questions:
+Report [here](https://github.com/Saketh-Chandra/My_ToDO/issues/new) in detail answering these questions:
 
 * What steps did you take to make the bug appear?
 * How can the bug be fixed? (In case you know)
@@ -52,4 +52,4 @@ Report [here](https://github.com/Saketh-Chandra/flask_basic/issues/new) in detai
 
 # :scroll: How do I contact the team?
 
-Check [here](https://github.com/Saketh-Chandra/flask_basic/graphs/contributors) for the list of contributors. Contact one of them through their profiles.
+Check [here](https://github.com/Saketh-Chandra/My_ToDO/graphs/contributors) for the list of contributors. Contact one of them through their profiles.
