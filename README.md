@@ -1,17 +1,17 @@
-# This is a test website made with Flask and Bootstrap
+# This is a ToDO website made with Django
 
-This a sample web application, using the [Flask](http://flask.pocoo.org/) web application framework
+This a web application where a user can login and create the tasks, using the [Django](https://www.djangoproject.com/) web application framework
 
-A running instance of it can be found at " 
-[https://a-test-website.herokuapp.com/](https://a-test-website.herokuapp.com/) ".
+<!--A running instance of it can be found at " 
+[https://xyz.herokuapp.com/](https://xyz.herokuapp.com/) ".-->
 
 # :book: How to use the repository?
 ## Setup
 ``` 
-git clone https://github.com/Saketh-Chandra/flask_basic.git
-cd flask_basic
+git clone https://github.com/Saketh-Chandra/My_ToDO.git
+cd My_ToDO
 pip install -r requirements.txt
-python app.py
+python manage.py renserver
 ```
 
 # :octocat: How to contribute?
