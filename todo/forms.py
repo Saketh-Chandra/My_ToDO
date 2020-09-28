@@ -7,10 +7,8 @@ from .models import *
 class user_task_Forms(forms.ModelForm):
     class Meta:
         model = UserTask
-        fields = '__all__'
-
-
+        fields = ('__all__')
 class user_todo_form(forms.ModelForm):
     class Meta:
-        model = UserTodo
-        fields = '__all__'
+        model=UserTodo
+        fields=('__all__')

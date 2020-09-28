@@ -19,7 +19,7 @@ def login_views(request):
         user = authenticate(username=username,password=password)
         if user is not None:
             login(request, user)
-            return redirect('hello')
+            return redirect('user_page')
         else:
             messages.info(request, "username or password is incorrect")
     context={}
@@ -38,6 +38,7 @@ def register_views(request):
             return redirect('login_page')
     context = {'form': form}
     return render(request, 'accounts/registerPage.html', context)
+
 
 def logout_view(request):
     logout(request)

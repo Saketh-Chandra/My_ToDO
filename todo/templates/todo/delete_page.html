@@ -1,29 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>delete</title>
-    <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+{% extends 'todo/base_delete_update.html' %}
 
-</head>
-<body>
+{% block content %}
+    <body class="d-flex flex-column h-100">
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0">
+        <div class="container">
+            <h1 class="mt-5">Delete?</h1>
+            <p class="lead">Do you want to delete this <strong>"{{ item }}"</strong> task?</p>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <h1></h1>
+                <a href="{% url 'user_page' %}" class="btn btn-success" role="button">Cancel</a>
+                <input type="submit" class="btn btn-danger" value="Delete">
 
-<body class="d-flex flex-column h-100">
-<!-- Begin page content -->
-<main role="main" class="flex-shrink-0">
-    <div class="container">
-        <h1 class="mt-5">Delete?</h1>
-        <p class="lead">Do you want to delete this <strong>"{{ item.title }}"</strong> task?</p>
-        <form action="" method="POST">
-            {% csrf_token %}
-            <h1></h1>
-            <a href="{% url 'user' %}" class="btn btn-success" role="button">Cancel</a>
-            <input type="submit" class="btn btn-danger" value="Delete">
-
-        </form>
-    </div>
-</main>
-
-</body>
-</html>
+            </form>
+        </div>
+    </main>
+    </body>
+{% endblock %}
