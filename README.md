@@ -2,8 +2,8 @@
 
 This a web application where a user can login and create the tasks, using the [Django](https://www.djangoproject.com/) web application framework
 
-<!--A running instance of it can be found at " 
-[https://xyz.herokuapp.com/](https://xyz.herokuapp.com/) ".-->
+A running instance of it can be found at " 
+[https://my--todo.herokuapp.com/](https://my--todo.herokuapp.com/) ".
 
 # :book: How to use the repository?
 ## Setup
@@ -11,7 +11,9 @@ This a web application where a user can login and create the tasks, using the [D
 git clone https://github.com/Saketh-Chandra/My_ToDO.git
 cd My_ToDO
 pip install -r requirements.txt
-python manage.py renserver
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
 ```
 
 # :octocat: How to contribute?
@@ -19,11 +21,8 @@ python manage.py renserver
 All contributions are welcome! Code, documentation, graphics or even design suggestions are welcome; use GitHub to its fullest. Submit pull requests, contribute tutorials or other wiki content -- whatever you have to offer, it would be appreciated!
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on contributing.
-<!--
-### On Heroku
 
-Read [Heroku's Flask deployment guide](https://devcenter.heroku.com/articles/getting-started-with-python-o#deploy-your-application-to-heroku) to learn how to deploy this application there.
--->
+
 
 # :scroll: License
 
