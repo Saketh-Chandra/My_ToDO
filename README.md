@@ -1,12 +1,35 @@
 # This is a ToDO website made with Django
-
 This a web application where a user can login and create the tasks, this was built with the [Django](https://www.djangoproject.com/) web application framework
 
 A running instance of it can be found at " 
 [https://my--todo.herokuapp.com/](https://my--todo.herokuapp.com/) ".
 
+## :heavy_check_mark: This a basic project for learning Django3
+
+
 # :book: How to use the repository?
-## Setup
+## :gear: Setup
+
+first we have to create virtual environments
+
+### On Windows: 
+```
+py -m pip install --user virtualenv
+py -m venv env
+.\env\Scripts\activate
+```
+
+### On macOS and Linux:
+```
+python3 -m pip install --user virtualenv
+python3 -m venv env
+source env/bin/activate
+```
+### Leaving the virtual environment
+```
+deactivate
+```
+### After setting up virtual environment do this!
 ``` 
 git clone https://github.com/Saketh-Chandra/My_ToDO.git
 cd My_ToDO
