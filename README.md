@@ -1,6 +1,6 @@
 # This is a ToDO website made with Django
 
-This a web application where a user can login and create the tasks, using the [Django](https://www.djangoproject.com/) web application framework
+This a web application where a user can login and create the tasks, this was built with the [Django](https://www.djangoproject.com/) web application framework
 
 A running instance of it can be found at " 
 [https://my--todo.herokuapp.com/](https://my--todo.herokuapp.com/) ".
