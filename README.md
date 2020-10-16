@@ -10,7 +10,7 @@ A running instance of it can be found at "
 # :book: How to use the repository?
 ## :gear: Setup
 
-first we have to create virtual environments
+#### **First we have to create virtual environments**
 
 ### On Windows: 
 ```cmd
