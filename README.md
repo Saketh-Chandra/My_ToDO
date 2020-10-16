@@ -13,24 +13,24 @@ A running instance of it can be found at "
 first we have to create virtual environments
 
 ### On Windows: 
-```
+```cmd
 py -m pip install --user virtualenv
 py -m venv env
 .\env\Scripts\activate
 ```
 
 ### On macOS and Linux:
-```
+```bash
 python3 -m pip install --user virtualenv
 python3 -m venv env
 source env/bin/activate
 ```
 ### Leaving the virtual environment
-```
+```bash
 deactivate
 ```
 ### After setting up virtual environment do this!
-``` 
+``` bash
 git clone https://github.com/Saketh-Chandra/My_ToDO.git
 cd My_ToDO
 pip install -r requirements.txt
