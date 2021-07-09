@@ -5,7 +5,9 @@ A running instance of it can be found at "
 [https://my--todo.herokuapp.com/](https://my--todo.herokuapp.com/) ".
 
 ## :heavy_check_mark: This a basic project for learning Django3
-
+## Resources:
+  * [Django (3.0) Crash Course Tutorials | Customer Management App](https://youtube.com/playlist?list=PL-51WBLyFTg2vW-_6XBoUpE7vpmoR3ztO)
+  * [To Do App | Django 3.0](https://youtu.be/4RWFvXDUmjo)
 
 # :book: How to use the repository?
 ## :gear: Setup
