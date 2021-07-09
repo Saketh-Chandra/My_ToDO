@@ -7,13 +7,12 @@ from .forms import *
 from .models import *
 
 
-# views.
-
-
 @login_required(login_url='login_page')
 def index(request):
-    usertask = UserTodo.objects.filter(user=request.user)
+    user_task = UserTodo.objects.filter(user=request.user)
     task_forms = user_task_Forms()
+
+    # print(request.META['HTTP_USER_AGENT'])
 
     if request.method == 'POST':
         task_forms = user_task_Forms(request.POST)
@@ -24,7 +23,7 @@ def index(request):
             todo_user.user = request.user
             todo_user.user_tasks = usertask_save
             todo_user.save()
-            # print('yah cool')
+
             message = "successfully created task!"
             messages.success(request, message)
             return redirect('user_page')
@@ -32,7 +31,7 @@ def index(request):
             # print('error')
             message = "to created task!"
             messages.error(request, message)
-    context = {'tasks': usertask, 'task_forms': task_forms}
+    context = {'tasks': user_task, 'task_forms': task_forms}
 
     return render(request, 'todo/index.html', context)
 
@@ -42,7 +41,7 @@ def updateTask(request, pk):
     try:
         usertask = UserTask.objects.get(pk=pk)
         task = UserTodo.objects.filter(user=request.user, user_tasks=usertask).first().user_tasks
-        # print(task)
+
         form = user_task_Forms(instance=task)
         context = {'form': form}
         if request.method == 'POST':
@@ -64,7 +63,6 @@ def updateTask(request, pk):
 def deleteTask(request, pk):
     try:
         item = UserTask.objects.get(id=pk)
-        print(item.task_name)
         task = UserTodo.objects.filter(user=request.user, user_tasks=item)
         context = {'item': item}
         if request.method == "POST":
