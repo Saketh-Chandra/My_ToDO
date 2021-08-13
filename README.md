@@ -41,6 +41,43 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
+# :whale: Using Docker Compose
+
+In production, Django uses a WSGI server such as Gunicorn and a web server such as Nginx.
+
+### Architecture:
+ ![Request Flow](https://user-images.githubusercontent.com/46235445/129321910-9dbfa7d3-395d-41f7-8400-eba90c77605e.png)
+<div align="center">
+ <h3>Request Flow Diagram</h3>
+</div>
+
+### Usage
+
+``` bash
+git clone https://github.com/Saketh-Chandra/My_ToDO.git
+cd My_ToDO
+docker-compose up -d
+```
+
+Run services in the background:
+`docker-compose up -d`
+
+Run services in the foreground:
+`docker-compose up --build`
+
+Inspect volume:
+`docker volume ls`
+and
+`docker volume inspect my_todo_static`
+
+View networks:
+`docker network ls`
+
+Bring services down:
+`docker-compose down`
+
+
+
 # :octocat: How to contribute?
 
 All contributions are welcome! Code, documentation, graphics or even design suggestions are welcome; use GitHub to its fullest. Submit pull requests, contribute tutorials or other wiki content -- whatever you have to offer, it would be appreciated!
