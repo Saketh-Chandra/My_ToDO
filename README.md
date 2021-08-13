@@ -51,9 +51,24 @@ In production, Django uses a WSGI server such as Gunicorn and a web server such 
  <h3>Request Flow Diagram</h3>
 </div>
 
+### :gear: Setup .env file
+   - #### Edit the .env file
+```Shell
+## .env file, Don't Share it with anyone!
+
+SECRET_KEY='e^$9mt#)3niaz9b9pyxc1x(53&qq1^@iuy2)=5hhji1t+*o_0$'
+DEBUG=False
+
+## Super-User Credentials
+SUPER_USER_NAME = 'root'
+SUPER_USER_PASSWORD = 'root'
+SUPER_USER_EMAIL = 'admin@email.com'
+```
+
+
 ### Usage
 
-``` bash
+``` Shell
 git clone https://github.com/Saketh-Chandra/My_ToDO.git
 cd My_ToDO
 docker-compose up -d
