@@ -11,7 +11,7 @@ services:
     ports:
       - "8000:8000"
   nginx:
-    build: ./nginx
+    build: ./Nginx
     volumes:
       - static:/static
     ports:
