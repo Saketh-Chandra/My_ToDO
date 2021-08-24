@@ -193,7 +193,7 @@ cython_debug/
 # *.iml
 # *.ipr
 # ALL ideal
-.idea/*
+.idea
 
 
 # CMake
