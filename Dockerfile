@@ -1,5 +1,5 @@
 # pull the official base image
-FROM python:3.11.0a5-alpine
+FROM python:3.11.8-alpine
 
 MAINTAINER SakethChandra "https://github.com/Saketh-Chandra/"
 
